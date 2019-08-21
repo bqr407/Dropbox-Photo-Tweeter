@@ -1,0 +1,26 @@
+{
+  "name": "final_project",
+  "version": "0.0.0",
+  "author": "Ben Roux and Alex Wenner",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "path": "latest",
+    "http-errors": "~1.6.2",
+    "pug": "2.0.0-beta11",
+    "twitter": "latest",
+    "passport-dropbox-oauth2": "latest",
+    "passport-twitter": "latest",
+    "passport": "latest",
+    "body-parser": "latest",
+    "express-session": "latest",
+    "isomorphic-fetch": "latest",
+    "dropbox": "latest"
+  }
+}

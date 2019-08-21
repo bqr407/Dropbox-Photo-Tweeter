@@ -1,0 +1,20 @@
+extends layout
+block content
+  //script(src='js/functions.js')
+  h1 Dropbox Tweeter
+  h2 A node.js application that integrates with the Dropbox and Twitter APIs
+  h2 to let you post Dropbox photos/files to your business account.
+  if(loggedinTwitter === false)
+    script(src='js/entryfunctions.js')
+    p Connect your Twitter to login:
+    img(id='birdie', src='images/birdie.gif', height='25%', width='25%')
+  if(loggedinTwitter === true)
+    p You are logged into Twitter as #{user.username}
+      img(src=user.photos[0].value)
+    a(href='/mydropbox')
+      button(class = 'button')
+        p Tweet My Dropbox Files
+    div(id='buttonpanel')
+      a(href='/logout')
+        button(class = 'button')
+          p Log Out

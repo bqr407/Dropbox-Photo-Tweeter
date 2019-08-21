@@ -1,0 +1,33 @@
+extends layout
+block content
+  div(id='buttonpanel')
+    a(href='/logout')
+      button(class = 'button')
+        p Log Out
+    div(id='spacer')
+    a(href='/twitter/login')
+      button(class = 'button')
+        p Return To Menu
+  h1 Select a File to Share on Twitter
+  if(loggedinDropbox === false)
+    p Get Dropbox Files
+    button
+      a(href='/dropbox/login')
+        img(src='images/dropbox.jpg')
+  h2 #{update}
+    script.
+      var tweet = function () {
+        var tweetbody = document.getElementById('tweetbody').value;
+      }
+    if(loggedinDropbox === true)
+      div(id='fileboxcontainer')
+        table
+          each _, index in files.entries
+            if (index%4===0)
+              tr
+            td
+              div(id='filebox')
+                div(id='fileboxbutton')
+                  a(href= 'http://localhost:3000/posttweet?tweetbody=' + sharelinks[index].url + '&file=' + files.entries[index].name)
+                    img(src='images/tweet.png')
+                p #{files.entries[index].name}

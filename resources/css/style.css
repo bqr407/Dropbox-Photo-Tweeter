@@ -1,0 +1,121 @@
+html, body {
+    font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+button {
+    background-color: #f1f4f3;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #5aaee6;
+    width: 150px;
+}
+
+button a {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: center;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+button img {
+    width: 100%;
+    height: auto;
+}
+
+#filebox {
+    background-color: #f1f4f3;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #5aaee6;
+    width: 300px;
+    height: 150px;
+}
+
+#fileboxcontainer {
+    text-align: center;
+}
+
+#fileboxbutton {
+    background-color: white;
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+#fileboxbutton img {
+    width: 100px;
+    height: auto;
+}
+
+#birdie {
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+
+#typewriter {
+    font-size:20px;
+    border-radius: 15%;
+}
+
+#typewriter:hover {
+    background-color:#5aaee6;
+    color:white;
+}
+ 
+.button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background-color: #5aaee6;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 4px 9px #999;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+.button:hover {
+    box-shadow: 3px 8px 9px #999;
+    color: white;
+}
+
+.button p {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button p:hover {
+    color: white;
+}
+
+.button:active {
+    background-color:#5aaee6;
+    box-shadow: 3px 12px 9px #999;
+    transform: rotate(15deg);
+}
+
+table tr {
+    padding: 200px;
+ }
+
+#buttonpanel {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
