@@ -19,8 +19,8 @@ let loggedinTwitter = false;
 let userobj = [];
 
 passport.use(new twitterStrategy({
-	consumerKey: 'UcPcus74KgmuMyYefE6BVrVJ7',
-	consumerSecret: 'w7ezUqvRuknLhJtnET7nfXkLXxzsUy4geYWb3EUVKc2XGiEEnJ',
+	consumerKey: 'consumerKey',
+	consumerSecret: 'consumerSecret',
 	callbackURL: 'http://localhost:3000/twittercallback'
 }, function(token, tokenSecret, profile, callback) {
 	return callback(null, profile);
@@ -28,8 +28,8 @@ passport.use(new twitterStrategy({
 
 passport.use(new dbxStrategy({
 	apiVersion: '2',
-	clientID: 's8z01pjbtqkez0v',
-	clientSecret: 'dty9qeen57pe2yl',
+	clientID: 'clientID',
+	clientSecret: 'clientSecret',
 	callbackURL: 'http://localhost:3000/dropboxcallback'
 }, function(accessToken, refreshToken, profile, done) {
 	dropboxToken = accessToken;
